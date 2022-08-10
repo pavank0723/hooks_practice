@@ -1,5 +1,5 @@
 import React from 'react'
-import { FirstName } from './ComA'
+import { FirstName,LastName } from './ComA'
 
 const ComC = () => {
   return (
@@ -7,7 +7,16 @@ const ComC = () => {
         <FirstName.Consumer>
             {
                 (fName) =>{
-                    return <h1>Hii <span style={{color:"red"}}>{fName}</span></h1>
+                    return (
+                        <LastName.Consumer>
+                        {
+                            (lName) =>{
+                                return <h1>Hii <span style={{color:"red"}}>{fName}</span>{lName}</h1>
+                            }
+                        }
+                        </LastName.Consumer>
+                        
+                    )
                 }
             }
         </FirstName.Consumer>
