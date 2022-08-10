@@ -1,9 +1,9 @@
 import React from 'react'
 import ComC from './ComC'
 
-const ComB = () => {
+const ComB = ({name}) => {
   return (
-    <ComC />
+    <ComC name = {name}/>
   )
 }
 

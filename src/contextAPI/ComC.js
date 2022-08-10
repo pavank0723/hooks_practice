@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ComC = () => {
+const ComC = ({name}) => {
   return (
-    <div>This is ComC</div>
+    <div>Hii {name}</div>
   )
 }
 
