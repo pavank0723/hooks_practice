@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { FirstName,LastName } from './ComA'
+import { FirstName, LastName } from './ComA'
 
 const ComC = () => {
     const fName = useContext(FirstName);

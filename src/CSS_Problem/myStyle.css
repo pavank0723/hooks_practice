@@ -1,0 +1,73 @@
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child {
+    background-color: red;
+    width: calc(33% - 10px);
+    height: 100%;
+    margin: 10px 0 0 10px;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.cn {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+}
+
+.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+/* Breakpoint */
+
+@media (min-width:992px) {
+    .child {
+        width: calc(11% - 10px);
+    }
+}
+
+/* 992 */
+@media (max-width:992px) {
+    .child {
+        width: calc(19.8% - 10px);
+    }
+}
+
+/* 780px */
+@media (max-width:780px) {
+    .child {
+        width: calc(24.5% - 10px);
+    }
+}
+
+/* 580px */
+@media (max-width:580px) {
+    .child {
+        width: calc(32.5% - 10px);
+    }
+}
+
+/* 350px */
+@media (max-width:350px) {
+    .child {
+        width: calc(48% - 10px);
+    }
+}
+
+@media (max-width:280px) {
+    .child {
+        width: calc(95% - 10px);
+    }
+}

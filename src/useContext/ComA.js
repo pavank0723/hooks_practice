@@ -6,6 +6,7 @@ const LastName = createContext();
 
 const ComA = () => {
     return (
+        //Provide the created contexts
         <FirstName.Provider value={"Pavan"}>
             <LastName.Provider value={"Yadav"}>
                 <ComB />
