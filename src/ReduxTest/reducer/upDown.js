@@ -8,7 +8,9 @@ const changeTheNumber = (state = initialState, action) =>{
         case 'DECREMENT':
             if(state > 0) {
                 return state - 1
-            }            
+            } else {
+                return 0
+            }         
             break
         default:
             return state

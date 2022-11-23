@@ -33,12 +33,16 @@ import ArrayData from './Basic/ArrayData'
 import ArrayWithObject from './Basic/ArrayWithObject'
 import ReusableComponent from './Basic/ReusableComponent'
 
-import { BrowserRouter, Routes, Route,Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './Router/components/Home'
 import About from './Router/components/About'
 import Contact from './Router/components/Contact'
 import Header from './Router/Header'
 import PageNotFound from './Router/components/PageNotFound'
+import UserForm from './Practice/UserForm'
+import RadioTest from './MultiLang/RadioTest'
+import Heading1 from './MultiLang/components/Heading1'
+import Heading2 from './MultiLang/components/Heading2'
 
 const App = () => {
     return (
@@ -47,7 +51,7 @@ const App = () => {
             {/* START Array Listing */}
             {/* <ArrayData /> */}
             {/* <ArrayWithObject /> */}
-            <ReusableComponent />
+            {/* <ReusableComponent /> */}
             {/* CSS Array Listing */}
 
             {/* ===== START CSS ===== */}
@@ -141,7 +145,7 @@ const App = () => {
             {/* ===== END Axios ===== */}
 
             {/* ===== START Router ===== */}
-            <BrowserRouter>
+            {/* <BrowserRouter>
             <Header />
                 <Routes>
                     <Route path='/' element={<Home />} />
@@ -150,8 +154,15 @@ const App = () => {
                     <Route path='/service' element={<Navigate to='/'/>}/>
                     <Route path='/*' element={<PageNotFound />} />
                 </Routes>
-            </BrowserRouter>
+            </BrowserRouter> */}
             {/* ===== END Router ===== */}
+
+            {/* ===== START Practice ===== */}
+            {/* <UserForm /> */}
+            <Heading1 />
+            <Heading2 />
+            <RadioTest />
+            {/* ===== END Practice ===== */}
 
         </>
     )
