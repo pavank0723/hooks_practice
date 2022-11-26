@@ -45,6 +45,7 @@ import Heading1 from './MultiLang/components/Heading1'
 import Heading2 from './MultiLang/components/Heading2'
 import MainUseParticle from './Particle_JS_Test/components/MainUseParticle'
 import AppMainParticle from './Particle_JS_Test/AppMainParticle'
+import Shop from './Redux_Saga_Practice/components/Shop'
 
 const App = () => {
     return (
@@ -89,6 +90,9 @@ const App = () => {
             {/* ===== START Redux ===== */}
             {/* <IncDec /> */}
             {/* ===== END Redux ===== */}
+            {/* START Reduc + Saga  */}
+            <Shop />
+            {/* END Reduc + Saga  */}
 
             {/* ===== START useMemo() ===== */}
             {/* <MemoTest /> */}
@@ -167,7 +171,7 @@ const App = () => {
             {/* ===== END Practice ===== */}
 
             {/* ===== START React Particle JS ===== */}
-            <AppMainParticle />
+            {/* <AppMainParticle /> */}
             {/* ===== END React Particle JS ===== */}
 
         </>
