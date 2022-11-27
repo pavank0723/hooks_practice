@@ -1,0 +1,41 @@
+{
+    "product":[
+        {
+            "id":1,
+            "name":"Samsung Galaxy M53 5G",
+            "color":"green",
+            "price":24500,
+            "category":"mobile",
+            "brand":"samsung",
+            "photo":"https://i.ebayimg.com/images/g/ONcAAOSwQbNib8d3/s-l500.jpg"
+        },
+        {
+            "id":2,
+            "name":"Samsung Galaxy S22 5G",
+            "color":"white",
+            "price":52900,
+            "category":"mobile",
+            "brand":"samsung",
+            "photo":"https://med.greatecno.com/475538-medium_default/samsung-galaxy-s22-s906b-5g-8gb-256gb-dual-sim-white.jpg"
+        },
+        {
+            "id":3,
+            "name":"Samsung Galaxy M32",
+            "color":"blue",
+            "price":10999,
+            "category":"mobile",
+            "brand":"samsung",
+            "photo":"https://www.hi94.com/product_images/jpeg/Samsung-Galaxy-M32-Prime.png"
+        },
+        {
+            "id":4,
+            "name":"Samsung Galaxy M33 5G",
+            "color":"mystique green",
+            "price":16999,
+            "category":"mobile",
+            "brand":"samsung",
+            "photo":"https://www.india.com/wp-content/uploads/2022/11/M33-5G.jpg"
+        }
+        
+    ]
+}
