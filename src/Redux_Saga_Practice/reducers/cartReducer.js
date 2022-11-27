@@ -4,28 +4,27 @@
 
 import { ADD_TO_CART, EMPTY_CART, REMOVE_FROM_CART } from "../utils/const"
 
-export const cartData = (initCartData = [], action) => {
-    // if(action.type === ADD_TO_CART){
-    //     console.warn("Cart Reducer called ",action)
-    //     return action.data
-    // }else{
-    //     return 'no action matched'
-    // }
+export const cartData = (data = [], action) => {
+
     switch (action.type) {
         case ADD_TO_CART:
-            console.log('Add to cart condition', action.initCartData)
-            return [action.initCartData, ...initCartData]
+            console.log('Add to cart condition', action.data)
+            return [action.data, ...data]
         case REMOVE_FROM_CART:
-            initCartData.length = initCartData.length ? initCartData.length - 1 : []
-            if(initCartData.length == 0){
+            console.log('remove called',action)
+            //data.length = data.length ? data.length - 1 : []
+            const remainingItem = data.filter((item) => item.id !== action.data)
+
+            console.warn("Remaining data",remainingItem)
+            if(data.length == 0){
                 alert('cart is empty')
             }
-            return [...initCartData]
+            return [...remainingItem]
         case EMPTY_CART:
             console.log('empty reducer called',action)
-            initCartData = []
-            return [...initCartData]
+            data = []
+            return [...data]
         default:
-            return initCartData
+            return data
     }
 }
