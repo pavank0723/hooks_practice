@@ -1,12 +1,7 @@
-import { PRODUCT_LIST } from "../utils/const"
+import { GET_PRODUCT_LIST, SET_PRODUCT_LIST } from "../utils/const"
 
-export const productList = async() =>{
-    let data = await 'https://jsonplaceholder.typicode.com/todos/1'
-    data = await data.json
-    console.log('product action called',data)
+export const getProductList = () =>{
     return{
-        type:PRODUCT_LIST,
-        data
+        type:GET_PRODUCT_LIST
     }
-
 }
