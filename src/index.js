@@ -5,16 +5,19 @@ import App from './App';
 // import store from './ReduxTest/store';
 import { Provider } from 'react-redux';
 import store from './Redux_Saga_Practice/store';
+import { BrowserRouter } from 'react-router-dom'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  {/* Redux */}
+    {/* Redux */}
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>
-   
+
     {/* <App /> */}
 
   </React.StrictMode>

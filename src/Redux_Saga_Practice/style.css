@@ -1,8 +1,14 @@
 .header_wrapper{
     background-color: orange;
     height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;    
 }
-
+.logo{
+    list-style: none;
+}
 .header_main{
     float: right;
     margin: 20px;
