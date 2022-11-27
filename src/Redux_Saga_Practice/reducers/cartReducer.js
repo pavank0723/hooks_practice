@@ -14,9 +14,9 @@ export const cartData = (initCartData = [], action) => {
     // }
     switch (action.type) {
         case ADD_TO_CART:
-            console.log('Add to cart condition',action.data)
-            return 1 + 1
+            console.log('Add to cart condition',action.initCartData)
+            return [action.initCartData,...initCartData]
         default:
-            return 'no condition matched'
+            return initCartData
     }
 }
