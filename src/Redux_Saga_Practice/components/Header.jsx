@@ -1,6 +1,6 @@
 import '../style.css'
 import { useDispatch, useSelector } from 'react-redux'
-import { addToCart } from '../action'
+import { addToCart } from '../action/cartAction'
 
 import CartIcon from '../../assets/logo192.png'
 const Header = () => {

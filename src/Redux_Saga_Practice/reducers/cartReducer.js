@@ -4,7 +4,6 @@
 
 import { ADD_TO_CART, EMPTY_CART, REMOVE_FROM_CART } from "../utils/const"
 
-
 export const cartData = (initCartData = [], action) => {
     // if(action.type === ADD_TO_CART){
     //     console.warn("Cart Reducer called ",action)
