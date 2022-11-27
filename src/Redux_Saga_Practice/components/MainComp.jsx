@@ -1,5 +1,5 @@
 import React from "react"
-import { addToCart } from "../action"
+import { addToCart,removeFromCart,emptyCart } from "../action"
 import { useDispatch } from "react-redux"
 
 const MainComp = () => {
@@ -13,7 +13,10 @@ const MainComp = () => {
     return (
         <>
             <h1>Main Component</h1>
-            <button onClick={() => dispatch(addToCart(ProductData))}>Add cart</button>
+            <button onClick={() => dispatch(addToCart(ProductData))}>Add cart</button><br />
+            <button onClick={() => dispatch(removeFromCart(ProductData.name))}>Remove cart</button><br />
+            <button onClick={() => dispatch(emptyCart(ProductData))}>Empty cart</button><br />
+            
         </>
     )
 }
