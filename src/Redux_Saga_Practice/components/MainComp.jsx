@@ -15,7 +15,7 @@ const MainComp = () => {
     return (
         <>
             <h1>Main Component</h1>
-            <button onClick={() => dispatch(emptyCart())}>Empty cart</button><br />            
+            
 
             <div className="product_container">
                 {
